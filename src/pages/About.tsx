@@ -168,15 +168,18 @@ const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
-              <Card key={index} className="card-glow group hover:scale-105 transition-all duration-300">
+              <Card
+                key={index}
+                className="card-glow group hover:scale-[1.04] transition-all duration-300 border border-white/10 bg-slate-950/80 hover:border-emerald-400/40 hover:shadow-[0_0_30px_rgba(52,211,153,0.18)]"
+              >
                 <CardContent className="p-6 text-center h-full">
                   <div className="mb-4 inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
                     <value.icon className="w-8 h-8 text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">
+                  <h3 className="text-xl font-semibold mb-3 text-white group-hover:text-emerald-300">
                     {value.title}
                   </h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-slate-400">
                     {value.description}
                   </p>
                 </CardContent>
@@ -305,30 +308,30 @@ const About = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="card-glow">
+            <Card className="card-glow group hover:scale-[1.04] transition-all duration-300 border border-white/10 bg-slate-950/80 hover:border-emerald-400/40 hover:shadow-[0_0_30px_rgba(52,211,153,0.18)]">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-4 text-primary">Innovation</h3>
-                <p className="text-muted-foreground">
+                  <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-emerald-300">Innovation</h3>
+                  <p className="text-slate-400">
                   Continuously investing in advanced manufacturing technologies and processes 
                   to deliver cutting-edge solutions that meet evolving industry demands.
                 </p>
               </CardContent>
             </Card>
             
-            <Card className="card-glow">
+            <Card className="card-glow group hover:scale-[1.04] transition-all duration-300 border border-white/10 bg-slate-950/80 hover:border-emerald-400/40 hover:shadow-[0_0_30px_rgba(52,211,153,0.18)]">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-4 text-primary">Quality</h3>
-                <p className="text-muted-foreground">
+                  <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-emerald-300">Quality</h3>
+                  <p className="text-slate-400">
                   Maintaining the highest standards of quality control and assurance throughout 
                   our manufacturing and sourcing processes to ensure customer satisfaction.
                 </p>
               </CardContent>
             </Card>
             
-            <Card className="card-glow">
+            <Card className="card-glow group hover:scale-[1.04] transition-all duration-300 border border-white/10 bg-slate-950/80 hover:border-emerald-400/40 hover:shadow-[0_0_30px_rgba(52,211,153,0.18)]">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-4 text-primary">Partnership</h3>
-                <p className="text-muted-foreground">
+                  <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-emerald-300">Partnership</h3>
+                  <p className="text-slate-400">
                   Building long-term partnerships with clients, suppliers, and stakeholders 
                   to create mutual value and sustainable growth in the industry.
                 </p>

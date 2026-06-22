@@ -101,7 +101,7 @@ const Contact = () => {
             <h1 className="text-5xl font-bold mb-6 glow-text">
               Contact Us
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-slate-400 max-w-3xl mx-auto">
               Get in touch with our team for your defence and industrial product requirements
             </p>
           </div>
@@ -113,12 +113,12 @@ const Contact = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             {contactInfo.map((info, index) => (
-              <Card key={index} className="card-glow text-center">
+              <Card key={index} className="card-glow group hover:scale-[1.04] transition-all duration-300 border border-white/10 bg-slate-950/80 hover:border-emerald-400/40 hover:shadow-[0_0_30px_rgba(52,211,153,0.18)] text-center">
                 <CardContent className="p-6">
-                  <div className="mb-4 inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10">
-                    <info.icon className="w-8 h-8 text-primary" />
+                  <div className="mb-4 inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/5 group-hover:bg-emerald-500/15 transition-colors">
+                    <info.icon className="w-8 h-8 text-emerald-300 group-hover:text-emerald-200" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">
+                  <h3 className="text-xl font-semibold mb-3 text-white group-hover:text-emerald-300">
                     {info.title}
                   </h3>
                   {info.details.map((detail, detailIndex) => {
@@ -129,12 +129,12 @@ const Contact = () => {
                         href={link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-muted-foreground text-sm mb-1 block hover:text-primary transition-colors underline-offset-2 hover:underline"
+                        className="text-slate-400 text-sm mb-1 block hover:text-emerald-300 transition-colors underline-offset-2 hover:underline"
                       >
                         {detail}
                       </a>
                     ) : (
-                      <p key={detailIndex} className="text-muted-foreground text-sm mb-1">
+                      <p key={detailIndex} className="text-slate-400 text-sm mb-1">
                         {detail}
                       </p>
                     );
@@ -147,9 +147,9 @@ const Contact = () => {
           {/* Contact Form & Map */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <Card className="card-glow">
+            <Card className="card-glow group hover:scale-[1.04] transition-all duration-300 border border-white/10 bg-slate-950/80 hover:border-emerald-400/40 hover:shadow-[0_0_30px_rgba(52,211,153,0.18)]">
               <CardHeader>
-                <CardTitle className="text-2xl text-primary">
+                <CardTitle className="text-2xl text-white group-hover:text-emerald-300">
                   Send Us a Message
                 </CardTitle>
               </CardHeader>
@@ -157,7 +157,7 @@ const Contact = () => {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                      <Label htmlFor="name">Full Name *</Label>
+                      <Label className="text-slate-400" htmlFor="name">Full Name *</Label>
                       <Input
                         id="name"
                         placeholder="Enter your full name"
@@ -167,7 +167,7 @@ const Contact = () => {
                       />
                     </div>
                     <div>
-                      <Label htmlFor="email">Email Address *</Label>
+                      <Label className="text-slate-400" htmlFor="email">Email Address *</Label>
                       <Input
                         id="email"
                         type="email"
@@ -181,7 +181,7 @@ const Contact = () => {
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                      <Label htmlFor="phone">Phone Number</Label>
+                      <Label className="text-slate-400" htmlFor="phone">Phone Number</Label>
                       <Input
                         id="phone"
                         type="tel"
@@ -191,7 +191,7 @@ const Contact = () => {
                       />
                     </div>
                     <div>
-                      <Label htmlFor="company">Company/Organization</Label>
+                      <Label className="text-slate-400" htmlFor="company">Company/Organization</Label>
                       <Input
                         id="company"
                         placeholder="Enter company name"
@@ -203,7 +203,7 @@ const Contact = () => {
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                      <Label htmlFor="inquiry">Inquiry Type</Label>
+                      <Label className="text-slate-400" htmlFor="inquiry">Inquiry Type</Label>
                       <Select value={formData.inquiry} onValueChange={(value) => setFormData({...formData, inquiry: value})}>
                         <SelectTrigger>
                           <SelectValue placeholder="Select inquiry type" />
@@ -218,7 +218,7 @@ const Contact = () => {
                       </Select>
                     </div>
                     <div>
-                      <Label htmlFor="subject">Subject</Label>
+                      <Label className="text-slate-400" htmlFor="subject">Subject</Label>
                       <Input
                         id="subject"
                         placeholder="Brief subject line"
@@ -229,7 +229,7 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <Label htmlFor="message">Message *</Label>
+                    <Label className="text-slate-400" htmlFor="message">Message *</Label>
                     <Textarea
                       id="message"
                       placeholder="Please provide details about your requirements, specifications, or questions..."
@@ -250,30 +250,30 @@ const Contact = () => {
 
             {/* Location & Additional Info */}
             <div className="space-y-8">
-              <Card className="card-glow">
+              <Card className="card-glow group hover:scale-[1.04] transition-all duration-300 border border-white/10 bg-slate-950/80 hover:border-emerald-400/40 hover:shadow-[0_0_30px_rgba(52,211,153,0.18)]">
                 <CardHeader>
-                  <CardTitle className="text-2xl text-primary">
+                  <CardTitle className="text-2xl text-white">
                     Our Locations
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-6">
-                    <div className="p-4 rounded-lg bg-muted/50 border border-border">
-                      <h4 className="font-semibold text-primary mb-2">Head Office</h4>
-                      <p className="text-muted-foreground text-sm mb-2">
+                    <div className="p-4 rounded-lg bg-white/5 border border-white/10">
+                      <h4 className="font-semibold text-white mb-2">Head Office</h4>
+                      <p className="text-slate-400 text-sm mb-2">
                         Rawalpindi, Pakistan
                       </p>
-                      <p className="text-muted-foreground text-sm">
+                      <p className="text-slate-400 text-sm">
                         Administrative headquarters and customer service center
                       </p>
                     </div>
                     
-                    <div className="p-4 rounded-lg bg-muted/50 border border-border">
-                      <h4 className="font-semibold text-primary mb-2">Manufacturing Facility</h4>
-                      <p className="text-muted-foreground text-sm mb-2">
+                    <div className="p-4 rounded-lg bg-white/5 border border-white/10">
+                      <h4 className="font-semibold text-white mb-2">Manufacturing Facility</h4>
+                      <p className="text-slate-400 text-sm mb-2">
                         Islamabad, Pakistan
                       </p>
-                      <p className="text-muted-foreground text-sm">
+                      <p className="text-slate-400 text-sm">
                         State-of-the-art manufacturing and quality control facility
                       </p>
                     </div>
@@ -281,40 +281,40 @@ const Contact = () => {
                 </CardContent>
               </Card>
 
-              <Card className="card-glow">
+              <Card className="card-glow group hover:scale-[1.04] transition-all duration-300 border border-white/10 bg-slate-950/80 hover:border-emerald-400/40 hover:shadow-[0_0_30px_rgba(52,211,153,0.18)]">
                 <CardHeader>
-                  <CardTitle className="text-2xl text-primary">
+                  <CardTitle className="text-2xl text-white">
                     Quick Response
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">
                     <div className="flex items-center space-x-3">
-                      <div className="w-3 h-3 bg-primary rounded-full"></div>
-                      <span className="text-foreground">24-hour response guarantee</span>
+                      <div className="w-3 h-3 bg-emerald-300 rounded-full"></div>
+                      <span className="text-slate-400">24-hour response guarantee</span>
                     </div>
                     <div className="flex items-center space-x-3">
-                      <div className="w-3 h-3 bg-primary rounded-full"></div>
-                      <span className="text-foreground">Free technical consultation</span>
+                      <div className="w-3 h-3 bg-emerald-300 rounded-full"></div>
+                      <span className="text-slate-400">Free technical consultation</span>
                     </div>
                     <div className="flex items-center space-x-3">
-                      <div className="w-3 h-3 bg-primary rounded-full"></div>
-                      <span className="text-foreground">Custom quote within 48 hours</span>
+                      <div className="w-3 h-3 bg-emerald-300 rounded-full"></div>
+                      <span className="text-slate-400">Custom quote within 48 hours</span>
                     </div>
                     <div className="flex items-center space-x-3">
-                      <div className="w-3 h-3 bg-primary rounded-full"></div>
-                      <span className="text-foreground">Dedicated account manager</span>
+                      <div className="w-3 h-3 bg-emerald-300 rounded-full"></div>
+                      <span className="text-slate-400">Dedicated account manager</span>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="card-glow">
+              <Card className="card-glow group hover:scale-[1.04] transition-all duration-300 border border-white/10 bg-slate-950/80 hover:border-emerald-400/40 hover:shadow-[0_0_30px_rgba(52,211,153,0.18)]">
                 <CardContent className="p-6 text-center">
-                  <h4 className="text-xl font-semibold mb-4 text-primary">
+                  <h4 className="text-xl font-semibold mb-4 text-white group-hover:text-emerald-300">
                     Emergency Support
                   </h4>
-                  <p className="text-muted-foreground mb-4">
+                  <p className="text-slate-400 mb-4">
                     For urgent defence and critical industrial requirements
                   </p>
                   <Button variant="outline_neon" className="w-full">

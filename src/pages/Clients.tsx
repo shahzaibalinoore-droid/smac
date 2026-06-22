@@ -126,13 +126,16 @@ const Clients = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {clientCategories.map((category, index) => (
-              <Card key={index} className="card-glow group hover:scale-105 transition-all duration-300">
+              <Card
+                key={index}
+                className="card-glow group hover:scale-[1.04] transition-all duration-300 border border-white/10 bg-slate-950/80 hover:border-emerald-400/40 hover:shadow-[0_0_30px_rgba(52,211,153,0.18)]"
+              >
                 <CardContent className="p-6 text-center">
                   <div className="mb-4 inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
                     <category.icon className="w-8 h-8 text-primary" />
                   </div>
                   
-                  <h3 className="text-xl font-semibold mb-2 text-primary">
+                  <h3 className="text-xl font-semibold mb-2 text-white group-hover:text-emerald-300">
                     {category.title}
                   </h3>
                   
@@ -140,13 +143,13 @@ const Clients = () => {
                     <CounterAnimation end={category.count} suffix="+" />
                   </div>
                   
-                  <p className="text-muted-foreground mb-4 text-sm">
+                  <p className="text-slate-400 mb-4 text-sm">
                     {category.description}
                   </p>
 
                   <div className="space-y-2">
                     {category.clients.map((client, clientIndex) => (
-                      <div key={clientIndex} className="text-sm text-foreground">
+                      <div key={clientIndex} className="text-sm text-slate-400">
                         • {client}
                       </div>
                     ))}
@@ -172,7 +175,7 @@ const Clients = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="card-glow">
+              <Card key={index} className="card-glow group hover:scale-[1.04] transition-all duration-300 border border-white/10 bg-slate-950/80 hover:border-emerald-400/40 hover:shadow-[0_0_30px_rgba(52,211,153,0.18)]">
                 <CardContent className="p-6">
                   <div className="mb-4">
                     <div className="flex mb-2">
@@ -183,12 +186,12 @@ const Clients = () => {
                     <Badge variant="secondary">{testimonial.industry}</Badge>
                   </div>
                   
-                  <blockquote className="text-muted-foreground mb-4 italic">
+                  <blockquote className="text-slate-400 mb-4 italic">
                     "{testimonial.testimonial}"
                   </blockquote>
                   
                   <div className="text-sm">
-                    <p className="font-semibold text-primary">
+                    <p className="font-semibold text-white group-hover:text-emerald-300">
                       {testimonial.company}
                     </p>
                   </div>
@@ -209,36 +212,36 @@ const Clients = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="card-glow text-center">
+            <Card className="card-glow text-center group hover:scale-[1.04] transition-all duration-300 border border-white/10 bg-slate-950/80 hover:border-emerald-400/40 hover:shadow-[0_0_30px_rgba(52,211,153,0.18)]">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-4 text-primary">
+                <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-emerald-300">
                   Quality Assurance
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-slate-400">
                   ISO 9001:2015 certified manufacturing processes ensuring 
                   consistent quality and reliability for critical applications.
                 </p>
               </CardContent>
             </Card>
             
-            <Card className="card-glow text-center">
+            <Card className="card-glow text-center group hover:scale-[1.04] transition-all duration-300 border border-white/10 bg-slate-950/80 hover:border-emerald-400/40 hover:shadow-[0_0_30px_rgba(52,211,153,0.18)]">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-4 text-primary">
+                <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-emerald-300">
                   Timely Delivery
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-slate-400">
                   99.2% on-time delivery rate with efficient logistics and 
                   project management ensuring your deadlines are met.
                 </p>
               </CardContent>
             </Card>
             
-            <Card className="card-glow text-center">
+            <Card className="card-glow text-center group hover:scale-[1.04] transition-all duration-300 border border-white/10 bg-slate-950/80 hover:border-emerald-400/40 hover:shadow-[0_0_30px_rgba(52,211,153,0.18)]">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-4 text-primary">
+                <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-emerald-300">
                   Technical Expertise
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-slate-400">
                   7+ years of specialized experience in defence and industrial 
                   applications with dedicated engineering support.
                 </p>
