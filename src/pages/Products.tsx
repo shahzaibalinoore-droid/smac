@@ -215,7 +215,7 @@ const Products = () => {
     },
     {
       id: "gpbox",
-      name: "PPGP Box",
+      name: "PTGP Box",
       description: "General Purpose Box",
       image: gpboxImg,
     },
