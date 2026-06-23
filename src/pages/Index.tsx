@@ -110,7 +110,7 @@ const Index = () => {
     },
     {
       src: productRail3,
-      title: "Loader Vavle",
+      title: "Plunger Asst",
       subtitle: "Tank Engine Part",
     },
     {
