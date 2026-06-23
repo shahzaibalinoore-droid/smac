@@ -83,8 +83,8 @@ const Products = () => {
     },
     {
       id: "product-7",
-      name: "",
-      description: "",
+      name: "4",
+      description: "4",
       image: product7Img,
     },
     {
