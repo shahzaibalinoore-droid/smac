@@ -28,6 +28,8 @@ import product16Img from "@/assets/Product-16.jpg";
 import product17Img from "@/assets/Product-17.jpg";
 import product18Img from "@/assets/Product-18.jpg";
 import product19Img from "@/assets/Product-19.jpg";
+import product20Img from "@/assets/Product-20.jpg";
+import product21Img from "@/assets/Product-21.jpg";
 import stretcherMountainImg from "@/assets/product-stretcher-mountain.png";
 import tripodSystemImg from "@/assets/product-tripod-system.png";
 import thermalSleeveImg from "@/assets/product-thermal-new.png";
@@ -83,14 +85,14 @@ const Products = () => {
     },
     {
       id: "product-7",
-      name: "",
-      description: "",
+      name: "4",
+      description: "4",
       image: product7Img,
     },
     {
       id: "product-8",
-      name: "",
-      description: "",
+      name: "5",
+      description: "5",
       image: product8Img,
     },
     {
@@ -165,6 +167,18 @@ const Products = () => {
       description: "",
       image: product19Img,
     },
+     {
+      id: "product-20",
+      name: "",
+      description: "",
+      image: product20Img,
+    },
+    {
+      id: "product-21",
+      name: "",
+      description: "",
+      image: product21Img,
+    },
     {
       id: "product-compressor",
       name: "Pacatinny Rail G3",
@@ -215,7 +229,7 @@ const Products = () => {
     },
     {
       id: "gpbox",
-      name: "PPGP Box",
+      name: "PTGP Box",
       description: "General Purpose Box",
       image: gpboxImg,
     },
