@@ -116,8 +116,8 @@ const Products = () => {
     },
     {
       id: "product-machinery-plain",
-      name: "",
-      description: "",
+      name: "Fuel Filter",
+      description: "SH 15",
       image: machineryPlainImg,
     },
     {
@@ -194,8 +194,8 @@ const Products = () => {
     },
     {
       id: "product-machinery",
-      name: "Fuel Filter",
-      description: "SH 15",
+      name: "Driver Seat",
+      description: "Talha 1",
       image: machineryImg,
     },
     {
