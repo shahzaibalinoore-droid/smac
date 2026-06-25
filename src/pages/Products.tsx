@@ -30,6 +30,7 @@ import product18Img from "@/assets/Product-18.jpg";
 import product19Img from "@/assets/Product-19.jpg";
 import product20Img from "@/assets/Product-20.jpg";
 import product21Img from "@/assets/Product-21.jpg";
+import product22Img from "@/assets/Product-22.jpg";
 import stretcherMountainImg from "@/assets/product-stretcher-mountain.png";
 import tripodSystemImg from "@/assets/product-tripod-system.png";
 import thermalSleeveImg from "@/assets/product-thermal-new.png";
@@ -178,6 +179,12 @@ const Products = () => {
       name: "",
       description: "",
       image: product21Img,
+    },
+   {
+      id: "product-22",
+      name: "Core Bore Equbrator",
+      description: "",
+      image: product22Img,
     },
     {
       id: "product-compressor",
