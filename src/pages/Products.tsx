@@ -73,44 +73,44 @@ const Products = () => {
     },
     {
       id: "product-5",
-      name: "2",
-      description: "2",
+      name: "Tool",
+      description: "Multi-Purpose",
       image: product5Img,
     },
     {
       id: "product-6",
-      name: "3",
-      description: "3",
+      name: "Connector Yoke",
+      description: "Al Zarar",
       image: product6Img,
     },
     {
       id: "product-7",
-      name: "4",
-      description: "4",
+      name: "Firing Pin",
+      description: "125mm Gun",
       image: product7Img,
     },
     {
       id: "product-8",
-      name: "5",
-      description: "5",
+      name: "Level Elevation",
+      description: "125mm Gun",
       image: product8Img,
     },
     {
       id: "product-9",
-      name: "",
-      description: "",
+      name: "Cocking Lever",
+      description: "T80 UD",
       image: product9Img,
     },
     {
       id: "product-10",
-      name: "",
-      description: "",
+      name: "Gear Shaft",
+      description: "T80 UD",
       image: product10Img,
     },
     {
       id: "product-11",
-      name: "",
-      description: "",
+      name: "Gear",
+      description: "125mm Gun",
       image: product11Img,
     },
     {
@@ -139,8 +139,8 @@ const Products = () => {
     },
     {
       id: "product-15",
-      name: "",
-      description: "",
+      name: "Sleeve",
+      description: "105mm Gun",
       image: product15Img,
     },
     {
@@ -151,8 +151,8 @@ const Products = () => {
     },
     {
       id: "product-17",
-      name: "",
-      description: "",
+      name: "Track Pad",
+      description: "ACP M113",
       image: product17Img,
     },
     {
@@ -163,8 +163,8 @@ const Products = () => {
     },
     {
       id: "product-19",
-      name: "",
-      description: "",
+      name: "Gear",
+      description: "APC M113",
       image: product19Img,
     },
      {
