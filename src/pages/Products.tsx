@@ -176,7 +176,7 @@ const Products = () => {
     },
     {
       id: "product-21",
-      name: "",
+      name: "Hand Wheel Assy",
       description: "",
       image: product21Img,
     },
@@ -194,8 +194,8 @@ const Products = () => {
     },
     {
       id: "product-machinery",
-      name: "",
-      description: "",
+      name: "Fuel Filter",
+      description: "SH 15",
       image: machineryImg,
     },
     {
