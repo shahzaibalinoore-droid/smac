@@ -189,7 +189,7 @@ const Products = () => {
     {
       id: "product-compressor",
       name: "Pacatinny Rail G3",
-      description: "i want you to add in product page  Product-3 img but with empty name and descprition",
+      description: "",
       image: productCompressorImg,
     },
     {
