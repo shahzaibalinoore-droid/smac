@@ -127,8 +127,8 @@ const Products = () => {
     },
     {
       id: "product-13",
-      name: "",
-      description: "",
+      name: "Tool",
+      description: "Multi-Purpose",
       image: product13Img,
     },
     {
