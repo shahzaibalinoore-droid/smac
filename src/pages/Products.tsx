@@ -134,8 +134,8 @@ const Products = () => {
     },
     {
       id: "product-14",
-      name: "",
-      description: "",
+      name: "Carbon Sealing Rings",
+      description: "Heavy-Duty Mechanical Seals",
       image: product14Img,
     },
     {
@@ -146,8 +146,8 @@ const Products = () => {
     },
     {
       id: "product-16",
-      name: "",
-      description: "",
+      name: "gunner's quadrant",
+      description: "elevation angle of a gun barrel",
       image: product16Img,
     },
     {
@@ -170,26 +170,26 @@ const Products = () => {
     },
      {
       id: "product-20",
-      name: "",
-      description: "",
+      name: "Armored personnel carrier track pad",
+      description: "APC M113",
       image: product20Img,
     },
     {
       id: "product-21",
       name: "Hand Wheel Assy",
-      description: "",
+      description: "Precision Adjustment Wheel",
       image: product21Img,
     },
    {
       id: "product-22",
       name: "Core Bore Equbrator",
-      description: "",
+      description: "125mm Gun Assembly",
       image: product22Img,
     },
     {
       id: "product-compressor",
       name: "Pacatinny Rail G3",
-      description: "",
+      description: "Rifle Mounting Interface",
       image: productCompressorImg,
     },
     {
