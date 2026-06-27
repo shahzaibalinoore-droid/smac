@@ -146,7 +146,7 @@ const Products = () => {
     },
     {
       id: "product-16",
-      name: "gunner's quadrant",
+      name: "Gunner's quadrant",
       description: "elevation angle of a gun barrel",
       image: product16Img,
     },
