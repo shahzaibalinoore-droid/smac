@@ -68,8 +68,8 @@ const Products = () => {
     },
     {
       id: "product-4",
-      name: "1",
-      description: "1",
+      name: "Polymer Corner Bracket",
+      description: "Mechanical Slide Assembly",
       image: product4Img,
     },
     {
@@ -122,8 +122,8 @@ const Products = () => {
     },
     {
       id: "product-12",
-      name: "",
-      description: "",
+      name: "Breech Mechanism Spares Kit",
+      description: "125mm Gun Assembly Parts",
       image: product12Img,
     },
     {
