@@ -56,6 +56,7 @@ const Products = () => {
 
   const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
+  const [selectedImage, setSelectedImage] = useState<{ src: string; alt: string } | null>(null);
   const itemsPerPage = 12;
 
   // Product categories with single image each
@@ -267,6 +268,21 @@ const Products = () => {
     currentPage * itemsPerPage
   );
 
+  useEffect(() => {
+    if (!selectedImage) {
+      return;
+    }
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setSelectedImage(null);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [selectedImage]);
+
   return (
     <Layout>
       {/* Hero Section */}
@@ -319,13 +335,18 @@ const Products = () => {
                 key={category.id}
                 className="group overflow-hidden rounded-[2rem] border border-white/10 bg-slate-950/90 p-4 shadow-xl transition-all duration-300 hover:-translate-y-1 hover:border-emerald-400/40 hover:shadow-[0_20px_70px_rgba(16,185,129,0.18)]"
               >
-                <div className="relative flex h-64 items-center justify-center overflow-hidden rounded-3xl bg-slate-900">
+                <button
+                  type="button"
+                  onClick={() => setSelectedImage({ src: category.image, alt: category.name })}
+                  className="relative flex h-64 w-full items-center justify-center overflow-hidden rounded-3xl bg-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-400/60"
+                  aria-label={`Open ${category.name} in full view`}
+                >
                   <img
                     src={category.image}
                     alt={category.name}
                     className="h-full w-full object-contain transition duration-500 group-hover:scale-105"
                   />
-                </div>
+                </button>
                 <div className="mt-4">
                   <p className="text-xl font-semibold text-white">{category.name}</p>
                   <p className="text-sm text-slate-400">{category.description}</p>
@@ -379,6 +400,34 @@ const Products = () => {
           )}
         </div>
       </section>
+
+      {selectedImage && (
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/85 p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div
+            className="relative w-full max-w-6xl rounded-[2rem] border border-white/10 bg-slate-950/95 p-3 shadow-2xl"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <button
+              type="button"
+              onClick={() => setSelectedImage(null)}
+              className="absolute right-4 top-4 z-10 rounded-full bg-black/60 p-2 text-white transition hover:bg-black/80"
+              aria-label="Close image preview"
+            >
+              ✕
+            </button>
+            <div className="flex max-h-[85vh] items-center justify-center overflow-hidden rounded-[1.5rem] bg-slate-900">
+              <img
+                src={selectedImage.src}
+                alt={selectedImage.alt}
+                className="max-h-[85vh] w-full object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-b from-card/30 to-background relative overflow-hidden">
